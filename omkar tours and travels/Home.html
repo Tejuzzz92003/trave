@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tours & Travels</title>
+    <style>
+        /* Reset some default styles */
+        .topbar{background:rgb(56, 156, 126);color:#e6eef8;font-size:13px}
+        .topbar .container{max-width:1200px;margin:0 auto;padding:6px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+        .topbar .left, .topbar .right{display:flex;align-items:center;gap:12px}
+        .topbar svg{width:16px;height:16px;opacity:0.9}
+        .topbar a{color:inherit;opacity:0.95}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+       }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #f8f6f6;
+            color: rgb(78, 156, 91);
+            padding: 0px 0;
+            text-align: center;        
+            padding:1.2em,2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+                .logo1 img{
+  height: 20%;
+  width: 20%;
+  padding-right:0%;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 15%;
+  align-items: right;
+  font-family: Oswald;
+  word-spacing: 2%;
+ 
+}
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: rgb(56, 156, 126);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero h1{
+           /* background-color: rgb(56, 156, 126);*/
+            height: 500px;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style:normal;
+            padding-top: 7%;
+            color: #e6eef8;
+            
+        }
+
+        
+        .tours {
+         padding: 60px 20px;
+            background: #f4f4f4;
+             text-align: center;
+        }
+.tour-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+
+        
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+                     
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            
+        }
+        .service-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            color: #2e8b57;
+        }
+
+        .service-box p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        .slider {
+    width: 100%;
+    overflow: hidden; /* hide extra part */
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Slides wrapper */
+.slides {
+    display: flex;
+    width: 400%; /* number of images x 100% */
+    animation: slide 60s linear infinite; /* slide animation */
+    stop
+} user-select: ;
+
+/* Each image */
+.slides img {
+    width: 25%; /* 100% ÷ number of images */
+}
+
+/* Keyframes for sliding from right to left */
+@keyframes slide {
+    0%    { transform: translateX(0%); }
+    25%   { transform: translateX(-100%); }
+    50%   { transform: translateX(-200%); }
+    75%   { transform: translateX(-300%); }
+    100%  { transform: translateX(0%); }
+}
+    </style>
+</head>
+<body>
+<div class="topbar" role="region" aria-label="Top information bar">
+<div class="container">
+<div class="left">
+<span aria-hidden="true">📞</span>
+<a href="tel:+911234567890">+91 9422090139</a>
+<span>|</span>
+<a href="mailto:info@travelmate.com">omkartours143@gmail.com</a>
+<span>|</span>
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6l4 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span>24 Hours Availble</span>
+</div>
+<div class="right">
+<a href="#">Track Booking</a>
+<span>|</span>
+<a href="#">EN</a>
+<span>|</span>
+<div class="socials" aria-hidden="true">
+<a href="#" title="Facebook">Facebook</a>
+<a href="#" title="Instagram">Instagram</a>
+</div>
+</div>
+</div>
+</div>
+
+
+    <header>
+        <div  class="logo1"><img src="logo.jpeg" alt="Website Logo"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+             <a href="#">Tour Packages</a>
+             <a href="#">Most Popular Places</a>
+              <a href="#">Events</a>
+            <a href="#">Contact Us</a>
+ 
+    
+        </nav>
+       
+    </header>
+   <section class="hero">
+    
+     <div class="slider">
+        <div class="slides">
+            <img src="imh1.jpg" alt="Image 1">
+            <img src="img2.jpg" alt="Image 2">
+            <img src="tea 6.jpg" alt="Image 3">
+            <img src="periyar lake 4.jpg" alt="Image 4">
+            <img src="imh1.jpg" alt="Image 1">   
+        </div>
+          <h1><b>Discover The Magic Of God's Own Country</b><br><br><u>Kerala</u>
+<br><br>"A journey To The Rich Culture And Living Traditions. From
+         Green Hills And Peaceful Tea Gardens To Calm 
+    Backwater And Sandy Beaches,Kerala Is full Of Natural
+        Beauty And Colourful art."</h1>
+    </section>
+ 
+  <section id="tours" class="tours">
+    <h2>Packages</h2>
+    <div class="tour-cards">
+      <div class="card">
+        <img src="img2.jpg" alt="Paris" />
+        <h3>1st Package</h3>
+        <p>3 Days, 2 Nights</p>
+        <button type="show"><a href="package1.html">See All Points</button></a>
+      </div>
+      <div class="card">
+        <img src="pk2.jpg" alt="Maldives" />
+        <h3>2nd Package</h3>
+        <p>4 Days, 3 Nights</p>
+        <button type="show"><a href="package1.html">See All Points</button></a>
+      </div>
+      <div class="card">
+        <img src="pk3.jpg" alt="Himalayas" />
+        <h3>3rd Package</h3>
+        <p>5 Days, 4 Nights</p>
+        <button type="show"><a href="package1.html">See All Points</button></a>
+    </div>
+  </section>
+
+    <footer>
+        <p>&copy; 2025 Kerala Tours & Travels. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

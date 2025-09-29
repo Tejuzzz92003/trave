@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>/* Slider container */
+.slider {
+    width: 100%;
+    overflow: hidden; /* hide extra part */
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Slides wrapper */
+.slides {
+    display: flex;
+    width: 400%; /* number of images x 100% */
+    animation: slide 60s linear infinite; /* slide animation */
+}
+
+/* Each image */
+.slides img {
+    width: 25%; /* 100% ÷ number of images */
+}
+
+/* Keyframes for sliding from right to left */
+@keyframes slide {
+    0%    { transform: translateX(0%); }
+    25%   { transform: translateX(-100%); }
+    50%   { transform: translateX(-200%); }
+    75%   { transform: translateX(-300%); }
+    100%  { transform: translateX(0%); }
+}</style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="imh1.jpg" alt="Image 1">
+            <img src="img2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+    </div>
+</body>
+</html>
